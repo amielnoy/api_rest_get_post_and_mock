@@ -4,6 +4,7 @@ from mock_examples.functions import double
 
 # note that I'm mocking the module when it is imported, not where CONSTANT_A is from
 def test_mocking_constant_a(mocker):
+    print()
     mocker.patch.object(mock_examples.functions, 'CONSTANT_A', 2)
     expected = 4
     actual = double()

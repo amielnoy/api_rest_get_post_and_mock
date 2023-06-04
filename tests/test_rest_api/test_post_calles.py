@@ -12,7 +12,7 @@ def test_post():
     # The API endpoint to communicate with
     base_url="https://jsonplaceholder.typicode.com/"
     url_post_suffix = "posts"
-    url_post=base_url+url_post_suffix
+    url_post = base_url+url_post_suffix
 
     # A POST request to tthe API
     post_response = requests.post(url_post, json=new_data)
